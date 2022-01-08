@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <p>Welcome to users management page</p>
+
+  <% allUsers.forEach(user=> { %>
+    <div>
+      <%= user.Username %> 
+      <a href="/editUsers/makechange/<%= user.Username %>">update <%= user.Username %>  </a> ,
+      <a href="/editUsers/delete/<%= user.Username %>">delete <%= user.Username %>  </a>
+      <br></br>
+    </div>
+    <% }) %>
+    <a href="/editUsers/makechange/addNew">Add new user</a>    
+</body>
+
+</html>

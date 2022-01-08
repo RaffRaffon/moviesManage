@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+
+<body>
+  <p>Welcome to search results page</p>
+
+  <table border="1">
+    <tr>
+      <td>
+        <u>Search query:</u>  <%= searchQuery %>
+        <br></br>
+        <u>Movies that match the search:</u>
+        <br></br>
+        <% names.forEach(name=> {  %>
+          <a href="/searchMovies/results/<%= name%>">
+            <%= name %>
+          </a>
+          <br></br>
+          <% }) %>
+      </td>
+      
+    </tr>
+  </table>
+  <a href="/menu">Back to menu </a>
+</body>
+
+</html>

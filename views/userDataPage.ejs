@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <p>Welcome to user data page</p>
+  
+ 
+    <% if( userObj.id!=="") { %>
+      <form action="/editUsers/update" method="POST">
+        ID: <input type="text" value="<%= userObj.id %>" id="id" name="id"><br><br>
+        Username: <input type="text" value="<%= userObj.Username %>" id="Username" name="Username"><br><br>
+        Password: <input type="text" value="<%= userObj.Password %>"id="Password" name="Password"><br><br>
+        Created Date: <input type="text" value="<%= userObj.CreatedDate %>" id="CreatedDate" name="CreatedDate"><br><br>
+        Transactions Num: <input type="text" value="<%= userObj.TransactionsNum %>" id="TransactionsNum" name="TransactionsNum"><br><br>
+    <input type="submit" value="Update">
+    <% } %> 
+     <% if( userObj.id==="") { %>
+      <form action="/editUsers/addNew" method="POST">
+        ID: <input type="text" value="<%= userObj.id %>" id="id" name="id"><br><br>
+        Username: <input type="text" value="<%= userObj.Username %>" id="Username" name="Username"><br><br>
+        Password: <input type="text" value="<%= userObj.Password %>"id="Password" name="Password"><br><br>
+        Created Date: <input type="text" value="<%= userObj.CreatedDate %>" id="CreatedDate" name="CreatedDate"><br><br>
+        Transactions Num: <input type="text" value="<%= userObj.TransactionsNum %>" id="TransactionsNum" name="TransactionsNum"><br><br>
+      <input type="submit" value="Save">
+      <% } %>
+</body>
+
+</html>

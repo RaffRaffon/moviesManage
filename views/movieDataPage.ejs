@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+
+<body>
+   <p>Welcome to movie data page</p>
+   <p>ID: <%=movieDetails.id %>
+   </p>
+   <p>Name: <%= movieDetails.name %>
+   </p>
+   <p>Genres:<%= movieDetails.genres %>
+   </p>
+   <p>Language:<%= movieDetails.language %>
+   </p>
+   Picture:
+   <br></br>
+   <% if(movieDetails.image!==undefined) { %>
+      <img src="<%= movieDetails.image.medium %>"></img>
+      <% } %>
+      <br></br>
+      <a href="/menu">Back to menu </a>
+      <br></br>
+      <a href="/searchMovies/results">Back to search results page </a>
+     
+</body>
+
+</html>

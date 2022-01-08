@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<script>
+    
+    function showAlert(isIsAlert){
+        if (isIsAlert==="true") alert("0 Transaction Num or invalid username/password")
+        
+    }
+</script>
+<body onload="showAlert(`<%= isAlert %>`)">
+    <p>Welcome to login page</p>
+    <form action="/login" method="POST">
+    Username: <input type="text" id="username" name="username"><br><br>
+    Password: <input type="text" id="password" name="password"><br><br>
+    <input type="submit" value="Login">
+</body>
+
+</html>

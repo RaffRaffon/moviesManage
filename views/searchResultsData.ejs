@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+
+<body>
+    <p>Welcome to search results data page</p>
+    <a href="/searchMovies/results/data/<%= name%>">Movie name: <%= name %></a>
+
+    <table border="1">
+        <tr>
+            <td>
+                <br></br>
+                <u>Movies with the same genre:</u>
+                <br></br>
+                <% movies.forEach(name=> { %>
+                    <a href="/searchMovies/results/data/<%= name%>">
+
+                        <%= name %>
+                    </a>
+                    <br></br>
+                    <% }) %>
+            </td>
+
+        </tr>
+    </table>
+    <a href="/menu">Back to menu</a>
+    <br></br>
+    <a href="/searchMovies/results">Back to search results</a>
+
+</body>
+
+</html>

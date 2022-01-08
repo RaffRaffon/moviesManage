@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "Username": "admin",
+            "Password": "admin",
+            "CreatedDate": "23/06/2021",
+            "TransactionsNum": "unlimited"
+        },
+        {
+            "id": "2",
+            "Username": "Shmulik",
+            "Password": "1234",
+            "CreatedDate": "23/06/1990",
+            "TransactionsNum": "25"
+        },
+        {
+            "id": "3",
+            "Username": "Diana",
+            "Password": "1234",
+            "CreatedDate": "23/06/2004",
+            "TransactionsNum": "11"
+        }
+    ]
+}
